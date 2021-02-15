@@ -13,7 +13,7 @@ router.get('/:id?',
       }
     });
   } else {
-    car.getAllcars(function(err, dbResult) {
+    car.get(function(err, dbResult) {
       if (err) {
         response.json(err);
       } else {
